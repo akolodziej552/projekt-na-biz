@@ -6,8 +6,9 @@ body {
     height: 100vh;
     flex-direction: column;
     font-family: "Exo 2",Arial,Helvetica,sans-serif;
+    overflow: auto;
 }
-.header {
+header {
     position: relative;
     height: 100px;
     width: 100vw;
@@ -16,7 +17,7 @@ body {
     align-items: center;
     background-color: rgba(67, 86, 121, 1);
 }
-.navigation {
+nav {
     height: 50px;
     width: 100vw;
     display: flex;
@@ -24,43 +25,49 @@ body {
     align-items: center;
     background-color: rgb(54, 69, 97);
 }
-.main-content {
+main {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#tel-num,.header i,.nav-text,.nav-icon,#shop-acc a:visited {
+address {
+    cursor: pointer;
+}
+ul {
+    display: flex;
+}
+i, span {
     color: white;
+}
+i {
+    display: inline;
+    margin: 0 10px;
+}
+
+span {
+    font-weight: bold;
+    font-size: 21px;
 }
 #tel-num, #shop-acc {
     display: flex;
     padding: 10px;
-    border-radius: 10px;
     margin: 0 20px;
     justify-content: space-around;
     align-items: center;
 }
 #main-page,#contact,#menu {
     display: flex;
+    justify-content: center;
+    align-items: center;
     height: 1em;
     padding: 15px;
     margin: 0 5px;
     width: 250px;
 }
-#tel-icon, #tel, #shopping-cart, #account, #nav-icon, #nav-text {
-    display: inline;
-}
-#tel,.nav-text {
-    font-weight: bold;
-    font-size: 21px;
-}
 #logo {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-}
-i {
-    margin: 0 10px;
 }
 img {
     height: 90px;
@@ -68,7 +75,6 @@ img {
 a {
     display: flex;
     color: black;
-    width: 100%;
     justify-content: center;
     align-items: center;
     text-decoration: none;
