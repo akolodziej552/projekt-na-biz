@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ZSŁ Bufet</title>
+    <link rel="icon" type="image/x-icon" href="../images/zsllogo.ico">
     <link rel="stylesheet" href="../styles/ArkuszMeyera.css">
     <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/menu.css">
     <script src="https://kit.fontawesome.com/846efd41ae.js" crossorigin="anonymous"></script>
     <script src="../js/events.js" defer></script>
 </head>
@@ -48,7 +50,34 @@
         </ul>
     </nav>
     <main>
-        <h1 style="font-size: 167px;">Menu</h1><br>
+        <h1>Menu</h1>
+        <div>Flitruj</div>
+        <div id="menu-list">
+            <div class="product">
+                <div class="product-info">
+                    <img src="../images/zsllogo.png" alt="Zdjęcie produktu" class="product-image">
+                    <h2 class="product-name">Nazwa produktu</h2>
+                    <p class="product-desc">idk what to put here</p>
+                </div>
+                <div class="pricing">
+                    <i class="fa-solid fa-check availability"></i>
+                    <h2 class="product-price">Cena</h2>
+                    <button class="product-cart">Do koszyka</button>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product-info">
+                    <img src="../images/zsllogo.png" alt="Zdjęcie produktu" class="product-image">
+                    <h2 class="product-name">Nazwa produktu</h2>
+                    <p class="product-desc">idk what to put here</p>
+                </div>
+                <div class="pricing">
+                    <i class="fa-solid fa-check availability"></i>
+                    <h2 class="product-price">Cena</h2>
+                    <button class="product-cart">Do koszyka</button>
+                </div>
+            </div>
+        </div>
     </main>
 </body>
 </html>

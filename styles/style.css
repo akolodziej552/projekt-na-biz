@@ -2,24 +2,21 @@
     box-sizing: border-box;
 }
 body {
-    display: flex;
-    height: 100vh;
-    flex-direction: column;
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 50px auto;
     font-family: "Exo 2",Arial,Helvetica,sans-serif;
     overflow: auto;
 }
 header {
     position: relative;
-    height: 100px;
-    width: 100vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: rgba(67, 86, 121, 1);
 }
 nav {
-    height: 50px;
-    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,8 +24,8 @@ nav {
 }
 main {
     display: flex;
-    justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 address {
     cursor: pointer;
@@ -43,7 +40,11 @@ i {
     display: inline;
     margin: 0 10px;
 }
-
+h1 {
+    display: block;
+    font-size: 100px;
+    font-weight: bold;
+}
 span {
     font-weight: bold;
     font-size: 21px;
@@ -74,7 +75,6 @@ img {
 }
 a {
     display: flex;
-    color: black;
     justify-content: center;
     align-items: center;
     text-decoration: none;
